@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-header">
+                CSR
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Generate certificate signing request for SMIME email certificates</h5>
+              <a href="/makeCSR" class="btn btn-primary">Proceed</a>
+            </div>
+          </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-header">
+                PKCS12
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Package your private key, certificate and ca-chain in PKCS12 format</h5>
+              <a href="#" class="btn btn-primary">Proceed</a>
+            </div>
+          </div>
+    </div>
+</div>
+
+</br>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div>
+            <p class="text-center">OpenSSL lib is used. Private key and certificates are not stored.</p>  
+        </div>
+    </div>
+</div>
+
+{% endblock %}
